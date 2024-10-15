@@ -1,0 +1,127 @@
+:root {
+  /* Primary */
+  --primary-dark-cyan: hsl(185, 75%, 39%);
+  --primary-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --primary-dark-grayish-blue: hsl(227, 10%, 46%);
+  /* Neutral */
+  --neutral-dark-gray: hsl(0, 0%, 59%);
+}
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+}
+/* End Global Rules */
+/* Start Card */
+.container {
+  background-color: var(--primary-dark-cyan);
+}
+.container .circles {
+  position: relative;
+}
+.container .circles .one {
+  position: absolute;
+  top: -500px;
+  left: -300px;
+  rotate: 120deg;
+  z-index: -1;
+}
+.container .circles .two {
+  position: absolute;
+  top: 400px;
+  right: -150px;
+  rotate: -150deg;
+  z-index: -1;
+}
+.container .card {
+  /* visibility: hidden; */
+  width: 350px;
+  height: fit-content;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+.container .card .cards-holders {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+.container .card .card-bg {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.container .card img {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 60px;
+  border: 6px solid white;
+}
+.container .card .text {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 60px;
+  /* padding-bottom: 30px; */
+  /* margin-top: 70px; */
+}
+.container .card .text .name {
+  display: inline;
+  font-weight: bolder;
+}
+.container .card .text .age {
+  display: inline;
+  font-weight: 500;
+  color: var(--neutral-dark-gray);
+}
+.container .card .text .live-in {
+  font-weight: 500;
+  color: var(--neutral-dark-gray);
+}
+.container .card hr {
+  outline: none;
+}
+.container .card .profile-data {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 10px;
+  color: var(--primary-very-dark-desaturated-blue);
+  padding-top: 10px;
+}
+.container .card .profile-data .likes_numbers,
+.container .card .profile-data .photos_numbers,
+.container .card .profile-data .followers .followers_numbers {
+  display: inline;
+}
+.container .card .profile-data .followers p,
+.container .card .profile-data .photos p,
+.container .card .profile-data .likes p {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--primary-very-dark-desaturated-blue);
+}
+
+/* End Card */
